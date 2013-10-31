@@ -4,7 +4,7 @@ guard :rspec do
   watch('spec/spec_helper.rb')  { "spec" }
 end
 
-guard :rubocop do
+guard :rubocop, cli: ['-a'] do
   watch(%r{.+\.rb$})
   watch(%r{(?:.+/)?\.rubocop\.yml$}) { |m| File.dirname(m[0]) }
 end

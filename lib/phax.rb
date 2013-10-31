@@ -1,4 +1,4 @@
-require "phax/version"
+require 'phax/version'
 
 # A ruby client for the Phaxio API
 module Phax
