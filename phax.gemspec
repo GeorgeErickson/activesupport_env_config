@@ -8,8 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Phax::VERSION
   spec.authors       = ["GeorgeErickson"]
   spec.email         = ["george55@mit.edu"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{A simple phaxio fax api wrapper using faraday.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,6 +17,11 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.4"
+  spec.add_dependency "faraday", "~> 0.8.8"
+  spec.add_dependency "multi_json", "~> 1.8"
+  spec.add_dependency "activesupport"
+
+  spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec", "~> 2.14.1"
 end

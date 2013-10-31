@@ -1,6 +1,6 @@
 # Phax
 
-TODO: Write a gem description
+A simple phaxio api wrapper using faraday.
 
 ## Installation
 

@@ -1,5 +1,9 @@
 require "phax/version"
 
+# A ruby client for the Phaxio API
 module Phax
-  # Your code goes here...
+
+  class << self
+
+  end
 end
